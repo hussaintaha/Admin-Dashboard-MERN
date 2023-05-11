@@ -1,0 +1,197 @@
+.totoal_stores_tabel {
+  padding: 10px 15px;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.customer_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.customer_header>button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  position: relative;
+  cursor: pointer;
+  border:none;
+  background-color: #f8f8f8;
+  box-shadow: 1px 2px 5px gray;
+  color: black;
+}
+
+.customer_header>button::after {
+  position: absolute;
+  content: " ";
+  background-image: url(http://localhost:4004/images/shape.png);
+  height: 100%;
+  width: 100%;
+  right: -3px;
+  bottom: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  top: 0;
+  border-radius: 10px;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  border-right: 1px solid rgba(128, 128, 128, 0.116);
+  word-wrap: break-word;
+  font-weight: 500;
+  /* text-align: start; */
+}
+
+table th {
+  font-weight: 800;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.paginationBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination_btn {
+  margin-left: auto;
+}
+
+.pagination_btn>button {
+  position: relative;
+  background-color: #f8f8f8;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 1px 2px 5px gray;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.pagination_btn>button::after {
+  position: absolute;
+  content: " ";
+  background-image: url(http://localhost:4004/images/shape.png);
+  height: 100%;
+  width: 100%;
+  right: -3px;
+  bottom: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  top: 0;
+  border-radius: 10px;
+}
+
+.pagination_btn>button:disabled {
+  cursor: default;
+}
+
+.noDataFound {
+  column-span: all;
+}
+
+
+.indexTD {
+  width: 5%;
+}
+
+
+.storeStatus{
+  position: relative;
+}
+
+.storeStatus::before{
+  content: "";
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.storeStatusDeActive::before{
+  background-color: red;
+}
+.storeStatusActive::before{
+  background-color: green;
+}
+
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .storeStatus::before{
+    width: 4px;
+  }
+
+}
+
+#download{
+  display: none;
+  visibility: hidden;
+}

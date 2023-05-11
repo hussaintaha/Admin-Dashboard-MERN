@@ -1,0 +1,110 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: 2px solid red;
+    background-color: #FF6056;
+    /* color: white; */
+}
+
+.login_card{
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    border-radius: 5px;
+    padding: 35px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container{
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.container>form{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>form>h1{
+    color: #FF6056;
+    font-size: 35px;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+.form_container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* border: 1px solid black; */
+    padding: 15px 10px;
+}
+
+.form_container>label{
+    padding: 5px 0px;
+    /* opacity: .5; */
+}
+
+.form_container>input{
+    width: 100%;
+    margin: 5px 0px;
+    padding: 10px 5px;
+    border: 1px solid rgba(128, 128, 128, 0.459);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.form_container>:focus-visible{
+    /* border: none; */
+    outline: none;
+}
+
+.form_container>button{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #FF6056;
+    color: white;
+    border: none;
+}
+
+.remember_me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding: 2px 0px;
+    margin-bottom: 15px;
+}
+.remember_me>label{
+    padding-left: 10px;
+}
+
+.remember_me>input{
+    border: 5px solid red;
+    background-color: #FF6056;
+}
+
+.container>form>a{
+    text-decoration: none;
+    color: #FF6056;
+    font-size: larger;
+    font-weight: 600;
+}
+.form_container>button{
+    cursor: pointer;
+}

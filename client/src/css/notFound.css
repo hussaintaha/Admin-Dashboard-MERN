@@ -1,0 +1,12 @@
+.parentDiv{
+    /* width: 55%; */
+    height: 80vh;
+    /* border: 10px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parentDiv>img{
+    width: 200px;
+}

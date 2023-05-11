@@ -1,0 +1,45 @@
+.faq_container{
+    padding: 10px 15px;
+}
+
+.faq_tabel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq_action_btn_container{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.add_faq{
+    float: right;
+    /* margin: 10px !important; */
+}
+
+
+.faq_action_btn{
+    padding: 5px 15px;
+    margin: 0px 5px;
+    background-color: #ef2c35;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.faq_container>td::before{
+    /* border: 2px solid red; */
+    padding-right: 10px;
+}
+
+.tabel_head_heading{
+    text-align: start;
+}
+
+.tabel_head_heading:last-child{
+    padding-left: 10px;
+}

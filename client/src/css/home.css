@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    /* border: 2px solid beige; */
+}
+
+.right_side{    
+    width: 80%;
+    background-color: #5e5e5e17;
+    /* display: flex; */
+}
+
+@media screen and (max-width: 650px) {
+
+    .right_side {
+        width: 100%;
+        /* border: 2px solid green; */
+    }
+
+}
+

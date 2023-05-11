@@ -1,0 +1,42 @@
+
+.main-content{
+    padding: 10px;
+    width: 100%;
+}
+
+.promo_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 10px;
+    /* border: 2px solid green; */
+    width: 100%;
+}
+
+.linkInput{
+    padding: 5px 10px;
+    /* min-width:100%; */
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    border: 1px solid transparent; 
+}
+.linkInput:focus{
+    border: none;
+    outline: none;
+     border: 1px solid rgba(128, 128, 128, 0.685);
+}
+
+.btnInput{
+    padding: 5px 15px;
+    margin: 0px 10px;
+    background-color: #ef2c35;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
